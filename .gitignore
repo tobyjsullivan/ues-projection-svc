@@ -2,5 +2,4 @@
 /.idea
 *.iml
 /data
-/env
-
+/env/*.env
