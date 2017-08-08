@@ -80,7 +80,7 @@ func getAccountHandler(w http.ResponseWriter, r *http.Request) {
         http.Error(w, "Must specify accountId in path.", http.StatusBadRequest)
         return
     }
-    
+
     acctId := uuid.UUID{}
     if err := acctId.UnmarshalText([]byte(paramAcctId)); err != nil {
         http.Error(w, "Error parsing accountId. "+err.Error(), http.StatusBadRequest)
